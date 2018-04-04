@@ -19,7 +19,6 @@ pipeline:
 
   release:
     image: plugins/github-release
-    api_key: <github_token>
     secrets: [ github_token ]
     files: build.tar.gz
     when:
