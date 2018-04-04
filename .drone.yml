@@ -11,4 +11,6 @@ pipeline:
 
   notify:
     image: plugins/slack
+    webhook: <slack_webhook>
+    channel: drone
     secrets: [ slack_webhook ]
