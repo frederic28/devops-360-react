@@ -5,6 +5,6 @@ pipeline:
       - yarn
 
   test:
-    images: node:alpine
+    image: node:alpine
     commands:
       - yarn test
