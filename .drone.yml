@@ -1,5 +1,10 @@
 pipeline:
-  echo:
+  build:
     image: node:alpine
     commands:
-      - echo 'Run CI / CD Pipeline on Drone'
+      - yarn
+
+  test:
+    images: node:alpine
+    commands:
+      - yarn test
