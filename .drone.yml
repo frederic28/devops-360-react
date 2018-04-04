@@ -8,3 +8,7 @@ pipeline:
     image: node:alpine
     commands:
       - yarn test
+
+  notify:
+    image: plugins/slack
+    secrets: [ slack_webhook ]
